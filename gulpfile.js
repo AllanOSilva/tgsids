@@ -16,7 +16,5 @@ gulp.task('less', function() {
 });
 
 exports.default = function(){
-   
-    gulp.watch('./source/scripts/*.js', {ignoreInitial:false}, gulp.series(comprimeJavascript));
-    gulp.watch('./source/images/*', {ignoreInitial:false}, gulp.series(comprimeImagens));
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
 }
