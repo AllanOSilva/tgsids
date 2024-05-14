@@ -1,33 +1,34 @@
 
 body{
+  margin: 0;
+    padding: 0;
     background-color: #a5a3a3;
   }
+
 h2{
   text-align: center;
   padding-bottom: 32px;
 }
-  .background-left, .background-right {
-    position: fixed;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-image: url('../../dist/imagens/topo-vazio_72_11zon.png');
-        
-    z-index: -1;
-}
 
 .background-left {
-    left: 0;
-    background-repeat: repeat-y;
+   left: 0;
+}
+.background-right{
+  right: 0;
 }
 
-.background-right {
-    right: -42vw;
-    background-repeat: repeat-y;
+.fundo-laterais{
+  background-repeat: repeat-y;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('../../src/imagens/topo-vazio_72_11zon.png');
+  z-index: -1;
 }
-
 //configurar o hero
 .sobre{
+  width: 80%;
   background-color: #000000bb;
   color: white;
   padding: 1vw;
@@ -37,7 +38,7 @@ h2{
   margin-bottom: 140px;
   padding-bottom: 32px;  
 }
-
+//menu de navegação
 .navbar{
   border: solid 1px #bdbaba;
   margin-bottom: 16px;
