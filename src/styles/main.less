@@ -1,7 +1,8 @@
 
 //configuração global
 body{
-  margin: 0;
+    object-fit: fill;
+    margin: 0;
     padding: 0;
     background-color: #a5a3a3;
   }
@@ -15,6 +16,7 @@ h2{
 //configuração da barra lateral
 .background-left {
    left: 0;
+   
 }
 .background-right{
   right: 0;
@@ -29,6 +31,26 @@ h2{
   background-image: url('../../src/imagens/topo-vazio_72_11zon.png');
   z-index: -1;
 }
+
+//configuração do carrocel
+#carousel-exemplo{
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0, 0, 0.5);
+  color: white;
+  width: 90%;
+  margin-bottom: 32px;
+}
+.carousel-inner{
+  margin-bottom: 32px;
+   img{
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+    }
+}
+
+
 //configurar o hero
 .sobre{
   width: 80%;
@@ -36,10 +58,11 @@ h2{
   color: white;
   padding: 1vw;
   min-height: 40vh;
-  text-align: center;
   margin-top: 80px;
   margin-bottom: 140px;
   padding-bottom: 32px; 
+  text-align: center;
+  
   img{
     height: 100%;
   } 
@@ -56,16 +79,10 @@ h2{
   
   
   a{
-    
-    
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
   }
 }
  
-  .shadow {
-    width: 80%;
-    background-color: rgb(224, 224, 224);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+  
