@@ -15,10 +15,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item" >
-                    <a class="nav-link active" href="#empresa">Empresa</a>
+                    <i class="fas fa-home"></i>
+                    <a class="nav-link active" href="#">Empresa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="#">Serviços</a>
+                    <a class="nav-link"  href="#carrocel">Serviços</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Localização</a>
@@ -33,76 +34,109 @@
         <div class="background-left"></div>
         <div class="background-right"></div>
     </div>
-
-
-    <section id="empresa" class="sobre container">
-        <h2>Sobre a empresa</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p>Somos uma empresa fundada em Setembro de 2010, na Cidade do Rio de Janeiro.
-                        Atuamos na prestação de serviço nas áreas de Assistência Técnica e instalações de rede
-                        de gases especiais; Possuimos equipes de técnicos capacitados para instalação, montagem
-                        e manutenção.
-                        Contamos com um galpão com 100 m² que é utilizado para a preparação do material a ser
-                        usado no serviço, e também, para estocagem de material.
-                        
-                        O fundador da empresa atua no mercado há mais de 30 anos, período pelo qual acumulou
-                        experiência nas áreas de instalação de redes para gases especiais, sejam inertes, corrosivos,
-                        e ou explosivos.</p>
-                </div>
-                <div class="col">
-                    <img src="../src/imagens/foto-empresa_1_11zon.jpg" alt="foto do dono">
+    <Section id="corpo">
+        <section id="empresa" class="sobre container">
+            <h2>Sobre a empresa</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Somos uma empresa fundada em Setembro de 2010, na Cidade do Rio de Janeiro.
+                            Atuamos na prestação de serviço nas áreas de Assistência Técnica e instalações de rede
+                            de gases especiais; Possuimos equipes de técnicos capacitados para instalação, montagem
+                            e manutenção.
+                            Contamos com um galpão com 100 m² que é utilizado para a preparação do material a ser
+                            usado no serviço, e também, para estocagem de material.
+                            
+                            O fundador da empresa atua no mercado há mais de 30 anos, período pelo qual acumulou
+                            experiência nas áreas de instalação de redes para gases especiais, sejam inertes, corrosivos,
+                            e ou explosivos.</p>
+                    </div>
+                    <div class="col">
+                        <img src="../src/imagens/foto-empresa_1_11zon.jpg" alt="foto do dono">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                <h2>Serviços Diversos</h2>
-                <div class="carousel-inner" >
-                    <div data-bs-interval="3000" class="carousel-item active">
-                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/01/07/16/00/grey-heron-8493489_1280.png">
+        </section>
+        <section id="carrocel">
+            <div class="container">
+                <div id="carousel-exemplo" class=" carousel carousel-fade slide" data-bs-ride="carousel">
+                    <h2>Serviços Diversos</h2>
+                    <div class="carousel-inner col" >
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/01/07/16/00/grey-heron-8493489_1280.png">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/01/27/18/24/squirrel-8536537_1280.jpg">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/10/25/21/04/mouse-8341314_1280.png">
+                        </div>
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
-                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/01/27/18/24/squirrel-8536537_1280.jpg">
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
-                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/10/25/21/04/mouse-8341314_1280.png">
-                    </div>
-                </div>
-                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div id="Localização" class="  text-wrap justify-content-center container">
-            <h2>Localização</h2>
-            <p>Lorem ipsum, dolor i sit amet consectetur adipisicing elit. Sapiente quisquam repellendus blanditiis ratione corrupti eum animi libero officiis eligendi rerum ipsa minima minus velit dicta optio laudantium, ipsam ea dolorem!</p>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem optio quam sit repellendus ipsam culpa magni perspiciatis cumque? Dolorum vitae harum perferendis molestiae facere quo blanditiis error impedit velit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci hic soluta ab harum voluptatum quidem nemo distinctio delectus quisquam dolore dolor odit ducimus ex deleniti et deserunt, dolores repudiandae assumenda?</p>
-        </div>
-    </section>
+        </section>
+        <section>
+            <div id="Localização" class="  text-wrap justify-content-center container">
+                <h2>Localização</h2>
+                <p>Lorem ipsum, dolor i sit amet consectetur adipisicing elit. Sapiente quisquam repellendus blanditiis ratione corrupti eum animi libero officiis eligendi rerum ipsa minima minus velit dicta optio laudantium, ipsam ea dolorem!</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem optio quam sit repellendus ipsam culpa magni perspiciatis cumque? Dolorum vitae harum perferendis molestiae facere quo blanditiis error impedit velit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci hic soluta ab harum voluptatum quidem nemo distinctio delectus quisquam dolore dolor odit ducimus ex deleniti et deserunt, dolores repudiandae assumenda?</p>
+            </div>
+        </section>
+    </Section>
+
         
 
-      <footer class="bg-body-tertiary text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright:
-            
-          </div>
+      <footer tyle="background-color: rgba(0, 0, 0, 0.05);" class="bg-body-tertiary text-center">
+          <div class="container">
+              <section>
+                  <a data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #3b5998;"
+                  href="#"
+                  role="button"><i class="fab fa-facebook-f"></i></a>
+                  <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #55acee;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-twitter"></i></a>
+                    <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #2bac52;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-whatsapp"></i
+                    ></a>
+                </section>
+            </div>
+            <div class="text-center p-3">
+                © 2024 Copyright:
+            </div>
       </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </body>
 
 
