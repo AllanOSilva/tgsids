@@ -11,7 +11,7 @@ gulp.task('less', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('src/js/*.js')  // Fonte dos arquivos JS
+    return gulp.src('src/scripts/*.js')  // Fonte dos arquivos JS
         .pipe(uglify())                // Minificar o JS concatenado
         .pipe(gulp.dest('dist/js'));   // Destino do arquivo processado
 });
@@ -24,7 +24,7 @@ gulp.task('minify-html', function() {
   gulp.task('watch', function() {
     gulp.watch('src/styles/*.less', gulp.series('less'));
     gulp.watch('src/*.html', gulp.series('minify-html'));
-    gulp.watch('src/js/*.js', gulp.series('scripts'));
+    gulp.watch('src/scripts/*.js', gulp.series('scripts'));
 });
 
 gulp.task('default', gulp.series('minify-html','less','scripts', 'watch'));
