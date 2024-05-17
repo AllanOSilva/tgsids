@@ -13,7 +13,7 @@ gulp.task('less', function() {
 gulp.task('scripts', function() {
     return gulp.src('src/scripts/*.js')  // Fonte dos arquivos JS
         .pipe(uglify())                // Minificar o JS concatenado
-        .pipe(gulp.dest('dist/js'));   // Destino do arquivo processado
+        .pipe(gulp.dest('dist/scripts'));   // Destino do arquivo processado
 });
 
 gulp.task('minify-html', function() {

@@ -3,7 +3,7 @@ function scrollToSection(event, sectionId) {
     const element = document.getElementById(sectionId);
     const headerOffset = 20; // Espaço adicional de 20px
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    //const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
     window.scrollTo({
         top: offsetPosition,
