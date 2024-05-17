@@ -2,6 +2,7 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
 const htmlmin = require('gulp-htmlmin');
+const uglify = require('gulp-uglify');
 
 gulp.task('less', function() {
     return gulp.src('src/styles/main.less')
@@ -9,6 +10,11 @@ gulp.task('less', function() {
         .pipe(gulp.dest('dist/styles'));
 });
 
+gulp.task('scripts', function() {
+    return gulp.src('src/js/*.js')  // Fonte dos arquivos JS
+        .pipe(uglify())                // Minificar o JS concatenado
+        .pipe(gulp.dest('dist/js'));   // Destino do arquivo processado
+});
 
 gulp.task('minify-html', function() {
     return gulp.src('src/*.html')
@@ -17,7 +23,8 @@ gulp.task('minify-html', function() {
   });
   gulp.task('watch', function() {
     gulp.watch('src/styles/*.less', gulp.series('less'));
-    gulp.watch('src/*.html', gulp.series('minify-html'))
+    gulp.watch('src/*.html', gulp.series('minify-html'));
+    gulp.watch('src/js/*.js', gulp.series('scripts'));
 });
 
-gulp.task('default', gulp.series('minify-html','less', 'watch'));
+gulp.task('default', gulp.series('minify-html','less','scripts', 'watch'));
