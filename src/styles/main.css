@@ -10,7 +10,6 @@ p {
 }
 h2 {
   text-align: center;
-  padding-bottom: 32px;
 }
 footer {
   bottom: 0;
@@ -38,23 +37,23 @@ footer {
   z-index: -1;
 }
 #carrocel {
-  padding-left: 1vw;
-  min-height: 40vh;
-  margin-top: 80px;
+  box-shadow: 0 0 5px  black;
+  width: 90%;
+  height: 100%;
   margin-bottom: 140px;
 }
 #carousel-exemplo {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 90%;
-  margin-bottom: 32px;
+  width: 100%;
+  height: 100%;
 }
 .carousel-inner {
   margin-bottom: 32px;
 }
 .carousel-inner img {
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 400px;
   object-fit: contain;
 }
 .sobre {
