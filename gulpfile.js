@@ -27,4 +27,4 @@ gulp.task('minify-html', function() {
     gulp.watch('src/scripts/*.js', gulp.series('scripts'));
 });
 
-gulp.task('default', gulp.series('less','watch'));
+gulp.task('default', gulp.series('less'));
