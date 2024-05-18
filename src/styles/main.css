@@ -97,7 +97,7 @@ footer {
   object-fit: contain;
 }
 .card-block img {
-  width: 70%;
+  object-fit: fill;
 }
 .card {
   margin: 20px 0;
