@@ -17,13 +17,13 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('minify-html', function() {
-    return gulp.src('src/*.html')
+    return gulp.src('*.html')
       .pipe(htmlmin({ collapseWhitespace: true }))
       .pipe(gulp.dest('dist'));
   });
   gulp.task('watch', function() {
     gulp.watch('src/styles/*.less', gulp.series('less'));
-    gulp.watch('src/*.html', gulp.series('minify-html'));
+    gulp.watch('*.html', gulp.series('minify-html'));
     gulp.watch('src/scripts/*.js', gulp.series('scripts'));
 });
 
