@@ -3,7 +3,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #a5a3a3;
+    background: rgb(255, 196, 0);
+    background: linear-gradient(90deg, rgba(255,196,0,1) 0%, rgba(166,156,12,1) 35%, rgba(82,255,0,1) 100%);
     scroll-behavior: smooth; 
   }
 p{
@@ -12,6 +13,16 @@ p{
 h2{
   text-align: center;
   padding-bottom: 32px;
+}
+//footer
+footer{
+  
+  bottom: 0;
+  
+  height: 14%;
+  z-index: 1;
+  background-color: rgb(224, 183, 0);
+  box-shadow: 10px 5px 20px 5px black;
 }
 //corpo central dos conteudos
 #corpo{
@@ -33,7 +44,7 @@ h2{
   top: 0;
   width: 50%;
   height: 100%;
-  background-image: url('../../src/imagens/topo-vazio_72_11zon.png');
+  background-image: url('../../src/imagens/topo-vazio_72_13zon.png');
   z-index: -1;
 }
 
@@ -80,9 +91,10 @@ h2{
 }
 //menu de navegação
 .navbar{
-  border: solid 1px #bdbaba;
+ 
+  box-shadow: 1px 5px 5px black;
   margin-bottom: 16px;
-  background-color: rgb(224, 223, 223);
+  background-color: rgb(224, 183, 0);
   height: 120px;
   img{
     height: 90%;
