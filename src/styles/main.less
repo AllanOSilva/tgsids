@@ -26,7 +26,8 @@ footer{
 }
 //corpo central dos conteudos
 #corpo{
- padding-left: 120px;
+ padding-left: 100px;
+ padding-right: 10px;
   
 }
 //configuração da barra lateral
@@ -108,5 +109,72 @@ footer{
     text-transform: uppercase;
   }
 }
+
+//configurando a aba trabalhos
+#trabalhos{
+  box-shadow: 0 0  5px black;
+}
  
+//configurando os cards
+.card-block {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  bottom: 0;
+  left: 0;  
+  object-fit: contain;
+}
+
+
+.card-block img{
+  width: 70%;
+}
+.card {
+  margin: 20px 0;
+}
+
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+  
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.5s ease-out;
+  background: white;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+  background-color: goldenrod;
+ 
+}
+
+.card-flip .back {
+  position: relative;
+  z-index: 0;
+  background-color: goldenrod;
+  color: white;
+  font-weight: bold;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
   
