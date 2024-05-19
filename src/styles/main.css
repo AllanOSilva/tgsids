@@ -62,13 +62,16 @@ footer {
 }
 .sobre {
   width: 70%;
-  background-color: #00000079;
+  background-color: #00000065;
   color: white;
   padding: 1vw;
   min-height: 40vh;
   margin-top: 80px;
   margin-bottom: 140px;
   padding-bottom: 32px;
+}
+.sobre h2 {
+  margin-bottom: 32px;
 }
 .sobre P {
   margin-top: 15%;
