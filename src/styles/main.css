@@ -21,6 +21,8 @@ footer {
 #corpo {
   padding-left: 100px;
   padding-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .background-left {
   left: 0;
@@ -42,6 +44,7 @@ footer {
   width: 90%;
   height: 100%;
   margin-bottom: 140px;
+  margin-left: 5%;
 }
 #carousel-exemplo {
   background-color: rgba(0, 0, 0, 0.5);
@@ -59,17 +62,13 @@ footer {
 }
 .sobre {
   width: 80%;
-  background-color: #000000bb;
+  background-color: #00000079;
   color: white;
   padding: 1vw;
   min-height: 40vh;
   margin-top: 80px;
   margin-bottom: 140px;
   padding-bottom: 32px;
-  text-align: center;
-}
-.sobre img {
-  height: 100%;
 }
 .navbar {
   box-shadow: 1px 5px 5px black;
