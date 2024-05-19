@@ -40,7 +40,6 @@ footer {
   z-index: -1;
 }
 #carrocel {
-  box-shadow: 0 0 5px  black;
   width: 90%;
   height: 100%;
   margin-bottom: 140px;
@@ -90,12 +89,8 @@ footer {
   font-weight: bold;
   text-transform: uppercase;
 }
-#trabalhos {
-  box-shadow: 0 0  5px black;
-}
 #localização {
   margin-top: 48px;
-  box-shadow: 0 0  5px black;
   height: 350px;
   width: 100%;
 }
