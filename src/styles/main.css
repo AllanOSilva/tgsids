@@ -61,7 +61,7 @@ footer {
   object-fit: contain;
 }
 .sobre {
-  width: 80%;
+  width: 70%;
   background-color: #00000079;
   color: white;
   padding: 1vw;
@@ -69,6 +69,9 @@ footer {
   margin-top: 80px;
   margin-bottom: 140px;
   padding-bottom: 32px;
+}
+.sobre P {
+  margin-top: 15%;
 }
 .navbar {
   box-shadow: 1px 5px 5px black;
