@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TGSids</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -12,14 +13,12 @@
     
 </head>
 <body> 
-   
-    <div class="sticky-top">
-        <nav class="navbar navbar-expand-lg">  
+        <nav class="navbar sticky-top navbar-expand-lg">  
             <img class="logo-nav" src="src/imagens/topo-vazio_70_13zon.png" alt="logo1">
-            <button type="button"  class="navbar-toggler"><span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu"></span></button>
-            <img class="logo-nav1" src="src/imagens/logo_2_11zon.png" alt="logo">
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="nav nav-pills navbar-nav">
+                <button type="button"  class="navbar-toggler"><span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu"></span></button>
+                <img class="logo-nav1" src="src/imagens/logo_2_11zon.png" alt="logo">
+            <div class=" pill collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav-pills navbar-nav">
                         <li class="nav-item" >
                             <a class="nav-link active" href="#empresa" onclick="scrollToSection(event, 'empresa')"><i class="fas fa-home"></i>Empresa</a>
                         </li>
@@ -36,10 +35,9 @@
                             <a class="nav-link"  href="./loja.html"><i class="bi bi-cart4"></i>Catálogo</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
                 <img class="logo-nav2" src="src/imagens/64px-Manómetro_3_psi_1.png" alt="manometro">
         </nav>
-    </div>
     <div class="fundo-laterais">
         <div class="background-left"></div>
         <div class="background-right"></div>
