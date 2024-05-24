@@ -91,6 +91,18 @@ footer {
     left: 0;
     width: 30%;
   }
+  .logo-nav1 {
+    width: 30%;
+  }
+  .logo-nav2 {
+    visibility: hidden;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  nav {
+    background-color: #c4c734;
+  }
 }
 #localização {
   margin-top: 48px;
