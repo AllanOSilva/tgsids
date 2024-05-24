@@ -27,9 +27,6 @@ footer {
 .background-left {
   left: 0;
 }
-.background-right {
-  right: 0;
-}
 .fundo-laterais {
   background-repeat: repeat-y;
   position: fixed;
@@ -88,6 +85,12 @@ footer {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .logo-nav {
+    left: 0;
+    width: 30%;
+  }
 }
 #localização {
   margin-top: 48px;
