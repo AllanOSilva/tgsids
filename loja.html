@@ -12,18 +12,37 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg">
         <img class="logo-nav" src="src/imagens/topo-vazio_70_13zon.png" alt="logo1">
-            <button type="button"  class="navbar-toggler"><span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu"></span></button>
             <img class="logo-nav1" src="src/imagens/logo_2_11zon.png" alt="logo">
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item" >
-                    <a class="nav-link active" href="index.html"><i class="bi bi-caret-left-square-fill"></i>voltar</a>
-                </li>
-            </ul>
+            <p style="font-weight: bold; font-size: 2EM;" class="p-5">CATÁLOGO DE ITENS</p>
             <img class="logo-nav2" src="src/imagens/64px-Manómetro_3_psi_1.png" alt="manometro">
     </nav> 
-    
-
+    <aside>
+        <nav style="height: fit-content; width:fit-content;" class="navbar sticky-left navbar-expand-lg">
+            <button type="button"  class="navbar-toggler"><span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu"></span></button>
+            <div class="pill p-2 mb collapse navbar-collapse flex-column nav-cardapio" id="menu">
+                <div class="nav-pills flex-column navbar-nav">
+                    <a class="nav-link nav-item text-primary  mb-3" href="index.html"><i class="bi bi-caret-left-square-fill"></i>voltar</a>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#categoria1" class="nav-link fs-5 text-primary  mb-3 mb-3 fw-bold">Categoria <i class="bi bi-1-square-fill"></i></button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#categoria2" class="nav-link text-primary  mb-3 fs-5 fw-bold">Categoria <i class="bi bi-2-square-fill"></i></button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#categoria3" class="nav-link fs-5 text-primary  mb-3 fw-bold">Categoria <i class="bi bi-3-square-fill"></i></button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#categoria4" class="nav-link fs-5 text-primary  mb-3 fw-bold">Categoria <i class="bi bi-4-square-fill"></i></button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#categoria5" class="nav-link fs-5 text-primary  mb-3 fw-bold">Categoria <i class="bi bi-5-square-fill"></i></button>
+                </div>
+            </div>
+        </nav>
+    </aside>
+    <div class="col-md-10">
+        <div class="tab-content">
+            <div id="categoria1" class="tab-pane active">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://via.placeholder.com/50x50" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer style="background-color: #706f6f9c;" class="text-center">
         <div class="container">
