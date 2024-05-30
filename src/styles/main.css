@@ -169,3 +169,15 @@ footer {
   padding-top: 2.5em;
   left: 0;
 }
+.itens img {
+  padding-bottom: 16px;
+  transition: transform 0.2s;
+}
+.itens img:hover {
+  transform: scale(2);
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    display: flex;
+  }
+}
