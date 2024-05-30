@@ -165,3 +165,7 @@ footer {
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
 }
+.barra-lateral {
+  padding-top: 2.5em;
+  left: 0;
+}
