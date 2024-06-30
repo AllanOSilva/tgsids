@@ -11,3 +11,8 @@ function scrollToSection(event, sectionId) {
     });
 }
 
+//evitar cliques do botão diretito do mouse
+document.addEventListener('contextMenu', function(event){
+    alert('não é permitido o download!');
+    event.preventDefault();
+})
